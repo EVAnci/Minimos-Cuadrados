@@ -14,7 +14,7 @@ Entonces, como lo que buscamos es una recta, nuestras incognitas serán, el valo
 
 ![Ejemplo de minimos cuadrados](media/min_cuad_lineal.png)
 
-Para cada punto de coordenadas $(x_i,y_i)$, calculamos la **_diferencia_** entre el valor observado $y_i$​ y el valor predicho por la línea de ajuste $mx_i+b$. Esto nos permite definir la **_función error_** que se puede calcular sumando el error residual $(e_i​)$ de cada punto, que no es más que dicha diferencia "$(mx_i+b)-(y_i)$". Entonces:
+Para cada punto de coordenadas $(x_i,y_i)$, calculamos la **_diferencia_** entre el valor observado $y_i$​ y el valor predicho por la línea de ajuste $mx_i+b$. Esto nos permite definir la **_función error_** que se puede calcular sumando el error residual $(e_i​)$ de cada punto, que no es más que dicha diferencia " $(mx_i+b)-(y_i)$ ". Entonces:
 
 $$
 E(m,b) = \sum_{i=1}^{n} (d_i)^2 = \sum_{i=1}^{n} [(mx_i + b) - y_i]^2
@@ -110,10 +110,15 @@ Recordemos que $\sum x_i,\sum y_i$ y todas estas expresiones que tenemos en las 
 
 Dados todos los valores de los puntos de muestra $(x_i,y_i)$, para una estimación con una función lineal, el sistéma de ecuaciones a resolver será aquel planteado en la implementación matemática. Entoces los datos necesarios para armar el sistema son:
 
-1. $\sum_{n=1}^{n}x_i$
-2. $\sum_{n=1}^{n}x_i^2$
-3. $\sum_{n=1}^{n}y_i$
-4. $\sum_{n=1}^{n}x_i\cdot{y_i}$
+- Para todas las sumatorias desde $i=1$ hasta $n$
+
+1. $\sum x_i$
+
+2. $\sum x_i^2$
+
+3. $\sum y_i$
+
+4. $\sum x_i\cdot{y_i}$
 
 Cuya implementación en pseudocódigo será:
 
