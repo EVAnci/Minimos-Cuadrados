@@ -138,6 +138,6 @@ Ahora, por otro lado, si buscamos obtener la solución exacta del sistema, busca
 
 1. **Eliminación hacia adelante**: En la eliminación hacia adelante, se realizan operaciones elementales en cada fila para eliminar las incógnitas por debajo de la _diagonal principal_. Esto requiere $O(n^2)$ operaciones, ya que hay $n$ filas y, en cada fila, se realizan aproximadamente $n$ operaciones.
 
-2. **Sustitución hacia atrás**: En la sustitución hacia atrás, se realizan operaciones elementales en cada fila para resolver las incógnitas de abajo hacia arriba. Esto también requiere $O(n^2)$ operaciones.
+2. **Sustitución hacia atrás**: En la sustitución hacia atrás, se realizan operaciones elementales en cada fila para resolver las incógnitas de abajo hacia arriba. Esto también requiere `\(O(n^2)\)` operaciones.
 
-Por lo tanto, la complejidad total del algoritmo es dominada por la etapa de eliminación hacia adelante, lo que resulta en una complejidad total de aproximadamente O(n3)O(n3). Esto significa que el tiempo de ejecución del algoritmo aumenta considerablemente con el tamaño del sistema (el número de ecuaciones).
+Por lo tanto, la complejidad total del algoritmo es dominada por la etapa de eliminación hacia adelante, lo que resulta en una complejidad total de aproximadamente `$O(n3)$`. Esto significa que el tiempo de ejecución del algoritmo aumenta considerablemente con el tamaño del sistema (el número de ecuaciones).
